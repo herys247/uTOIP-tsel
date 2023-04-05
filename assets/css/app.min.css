@@ -10352,7 +10352,7 @@ small {
   position: relative;
   color: #E5131D;
   font-weight: 600;
-  background: rgba(24, 32, 56, 0.1) !important;
+  background: rgba(24, 32, 56, 0.3) !important;
   border-radius: 0.5rem;
   margin: 0 1rem;
 }
@@ -10769,7 +10769,6 @@ body.dark .navigation .navigation-menu-body ul li.open > a,
 body.dark .navigation .navigation-menu-body ul .header form .input-group .input-group-append li.open > button.btn,
 .header form .input-group .input-group-append body.dark .navigation .navigation-menu-body ul li.open > button.btn {
   color: white;
-  background-color: #454c66;
 }
 
 body.dark .navigation .navigation-menu-body ul li .dropdown-divider {
