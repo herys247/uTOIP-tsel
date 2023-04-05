@@ -163,7 +163,7 @@
 
                     <!-- begin::logo Tsel -->
                     <li class="nav-item">
-                        <img class="logo-tsel" src="assets/media/image/logo_tsel.svg" alt="Telkomsel">
+                        <img class="logo-tsel" src="assets/media/image/logo-tsel.png" alt="Telkomsel">
                     </li>
                     <!-- end::logo Tsel -->
 
@@ -844,6 +844,51 @@
         <div class="col-md-12">
 
             <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-3">
+                                    <label for="inputDate">Date</label>
+                                    <input type="text" name="single-date-picker" class="form-control">
+                                  </div>
+                                  <div class="form-group col-md-3">
+                                    <label for="selectArea">Area</label>
+                                        <select class="form-control" id="selectArea">
+                                          <option>Nasional</option>
+                                          <option>Area 1</option>
+                                          <option>Area 2</option>
+                                          <option>Area 3</option>
+                                          <option>Area 4</option>
+                                        </select>
+                                  </div>
+                                  <div class="form-group col-md-3">
+                                    <label for="selectArea">Region</label>
+                                        <select class="form-control" id="selectArea">
+                                          <option>All Region</option>
+                                          <option>Region 1</option>
+                                          <option>Region 2</option>
+                                          <option>Region 3</option>
+                                          <option>Region 4</option>
+                                        </select>
+                                  </div>
+                                  <div class="col-md-3 p-30">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                  </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="row">
                 <div class="col-lg-3 col-md-12">
                     <div class="card">
                         <div class="card-body">
@@ -1071,23 +1116,15 @@
 <script src="vendors/bundle.js"></script>
 
 
-    <!-- Apex chart -->
-    <script src="https://apexcharts.com/samples/assets/irregular-data-series.js"></script>
-    <script src="vendors/charts/apex/apexcharts.min.js"></script>
-
-    <!-- Daterangepicker -->
-    <script src="vendors/datepicker/daterangepicker.js"></script>
+   <!-- Datepicker -->
+   <script src="vendors/datepicker/daterangepicker.js"></script>
+   <script src="assets/js/examples/datepicker.js"></script>
 
     <!-- DataTable -->
     <script src="vendors/dataTable/datatables.min.js"></script>
 
     <!-- Dashboard scripts -->
     <script src="assets/js/examples/dashboard.js"></script>
-
-    <!-- Vamp -->
-    <script src="vendors/vmap/jquery.vmap.min.js"></script>
-    <script src="vendors/vmap/maps/jquery.vmap.usa.js"></script>
-    <script src="assets/js/examples/vmap.js"></script>
 
     <!-- To use theme colors with Javascript -->
     <div class="colors">
