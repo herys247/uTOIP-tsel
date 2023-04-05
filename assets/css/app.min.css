@@ -10042,8 +10042,8 @@ small {
 }
 
 .header .header-logo a img:not(.logo),
-.header .header-logo form .input-group .input-group-append button.btn img:not(.logo),
-.header form .input-group .input-group-append .header-logo button.btn img:not(.logo) {
+.header .header-logo form .input-group .input-group-append button.btn img:not(.logo .logo-tsel),
+.header form .input-group .input-group-append .header-logo button.btn img:not(.logo .logo-tsel) {
   display: none;
 }
 
@@ -11690,7 +11690,7 @@ body.dark.form-membership .form-wrapper #logo img:not(.logo-light) {
   width: 135px;
 }
 
-body.dark #logo-tsel img:not(.logo-tsel) {
+body.dark .logo-tsel-light {
   display: none !important;
 }
 
