@@ -11687,6 +11687,10 @@ body.dark.form-membership .form-wrapper #logo img:not(.logo-light) {
   display: none;
 }
 
+.logo-tsel {
+  width: 135px;
+}
+
 body.dark #logo-tsel img:not(.logo-tsel) {
   display: none !important;
 }
