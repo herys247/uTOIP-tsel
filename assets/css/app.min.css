@@ -7598,6 +7598,17 @@ body.form-membership .form-wrapper #logo img:not(.logo) {
   display: none;
 }
 
+.logo {
+  width: 100%;
+}
+
+.login-background {
+  background-image: url('../media/image/login-bg.jpg');
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
 body.form-membership .form-wrapper h5 {
   text-align: center;
   margin-bottom: 2rem;
