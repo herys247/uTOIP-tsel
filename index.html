@@ -25,7 +25,7 @@
     <!-- App styles -->
     <link rel="stylesheet" href="assets/css/app.min.css" type="text/css">
 </head>
-<body  class="dark">
+<body id="body" class="dark"> 
 
 <!-- begin::preloader-->
 <div class="preloader">
@@ -144,7 +144,7 @@
 
                     <!-- begin::background mode -->
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link" title="dark/light mode">
+                        <a href="#" onclick="toggleDarkLight()" class="nav-link" title="dark/light mode">
                             <i data-feather="sun"></i>
                         </a>
                     </li>
@@ -1097,6 +1097,14 @@
 
     <!-- Dashboard scripts -->
     <script src="assets/js/examples/dashboard.js"></script>
+
+    <script>
+        function toggleDarkLight() {
+        var body = document.getElementById("body");
+        var currentClass = body.className;
+        body.className = currentClass == "dark" ? "light" : "dark";
+        }
+    </script>
 
     <!-- To use theme colors with Javascript -->
     <div class="colors">
