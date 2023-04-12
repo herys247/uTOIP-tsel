@@ -7594,7 +7594,7 @@ body.form-membership .form-wrapper #logo {
   margin: 1rem 0 3rem;
 }
 
-body.form-membership .form-wrapper #logo img:not(.logo) {
+body.form-membership .form-wrapper #logo #logoTsel img:not(.logo) img:not(.logo-tsel) {
   display: none;
 }
 
@@ -11699,6 +11699,9 @@ body.dark.form-membership .form-wrapper #logo img:not(.logo-light) {
 
 .logo-tsel {
   width: 135px;
+}
+body.light .nav-item #logoTsel img:not(.logo-tsel) {
+  display: none !important;
 }
 
 body.dark .logo-tsel-light {
