@@ -4939,7 +4939,7 @@ a.btn[href="#previous"]:hover,
 .btn.btn-outline-primary {
   background: none;
   border-color: #E5131D;
-  color: #0074e6;
+  color: #E5131D;
   border-width: 1px;
 }
 
@@ -10363,7 +10363,7 @@ small {
   position: relative;
   color: #E5131D;
   font-weight: 600;
-  background: rgba(24, 32, 56, 0.3) !important;
+  background: rgba(24, 32, 56, 0.2) !important;
   border-radius: 0.5rem;
   margin: 0 1rem;
 }
