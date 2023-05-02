@@ -270,7 +270,7 @@
                                 <a href="#">Basic Components</a>
                                 <ul>
                                     <li>
-                                        <a class="active" href="alert.html">Alerts</a></li>
+                                        <a  href="alert.html">Alerts</a></li>
                                     <li>
                                         <a  href="accordion.html">Accordion</a></li>
                                     <li>
@@ -280,7 +280,7 @@
                                     <li>
                                         <a  href="progress.html">Progress</a></li>
                                     <li>
-                                        <a  href="modal.html">Modal</a></li>
+                                        <a  class="active" href="modal.html">Modal</a></li>
                                     <li>
                                         <a  href="tab.html">Tab</a></li>
                                 </ul>
@@ -337,6 +337,7 @@
                                 <a  href="#">Toast</a></li>
                             <li>
                                 <a  href="#">Tour</a></li>
+                        </ul>
                     </div>
                     <div id="pages">
                         <ul>
@@ -389,7 +390,7 @@
                 <li class="breadcrumb-item">
                     <a href="#">Components</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">Alerts</li>
+                <li class="breadcrumb-item active" aria-current="page">Modal</li>
             </ol>
         </nav>
     </div>
@@ -399,35 +400,117 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h6 class="card-title">Default Functionality</h6>
 
-                    <div class="alert alert-secondary" role="alert">
-                        A simple secondary alert—check it out!
-                    </div>
-                    <div class="alert alert-success" role="alert">
-                        A simple success alert—check it out!
-                    </div>
-                    <div class="alert alert-danger" role="alert">
-                        A simple danger alert—check it out!
-                    </div>
-                    <div class="alert alert-warning" role="alert">
-                        A simple warning alert—check it out!
-                    </div>
-                    <div class="alert alert-info" role="alert">
-                        A simple info alert—check it out!
-                    </div>
-                    <div class="alert alert-dark m-b-0" role="alert">
-                        A simple dark alert—check it out!
+                    <div class="modal" tabindex="-1" role="dialog" style="position: static;display: block">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content border">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal body text goes here.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-body">
-                    <h6 class="card-title">Alert Link</h6>
-                    <div class="alert alert-success" role="alert">
-                        A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a
-                        click if you like.
+                    <h6 class="card-title">Live Demo</h6>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                        Launch demo modal
+                    </button>
+
+                    <!-- Modal 1 -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog"
+                         aria-labelledby="exampleModal1Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModal1Label">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Scrolling long content</h6>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+                        Launch demo modal
+                    </button>
+
+                    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog " role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="ti-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet, atque
+                                    autem, commodi consequatur corporis cumque ea eligendi esse ex facere fugit
+                                    harum incidunt iure laborum maiores minus non pariatur praesentium quod
+                                    sapiente tenetur ullam unde vel voluptatibus. Accusamus aliquid beatae
+                                    dolore earum incidunt nulla possimus quibusdam, sed? Accusantium, impedit,
+                                    voluptatum! Accusamus asperiores aut cupiditate, debitis deleniti ea, enim
+                                    eveniet explicabo facilis inventore iusto maiores molestiae natus nostrum,
+                                    quod tempora temporibus. Blanditiis consequuntur dignissimos ducimus eos
+                                    expedita facere fugit, incidunt laudantium libero natus odit recusandae rem
+                                    sequi sunt temporibus, vel velit, voluptate! Dolores, nesciunt quod! Amet
+                                    corporis eaque esse excepturi maiores nesciunt officiis sed temporibus vitae
+                                    voluptas voluptatem, voluptatibus! Accusamus animi aperiam autem
+                                    consequatur, cupiditate distinctio dolore ducimus eius est ex explicabo id
+                                    itaque molestiae natus nostrum nulla, odit, officiis quam qui rerum sunt
+                                    suscipit temporibus vero. Ab adipisci aliquam aspernatur beatae blanditiis
+                                    cum delectus doloribus enim expedita facere impedit in laborum magnam, magni
+                                    nam, necessitatibus odio, quasi repudiandae. Deserunt doloribus esse itaque
+                                    magnam nihil nobis possimus quidem repellendus? Aliquid, amet consequuntur
+                                    dicta dignissimos dolore dolorem et, in nam neque officiis quisquam tempore.
+                                    Eligendi et hic officiis quam quisquam veniam veritatis. A doloribus natus
+                                    quisquam veniam! Beatae culpa ducimus earum exercitationem odio quae quam
+                                    quas quia quidem, quo recusandae, repudiandae sapiente sed temporibus
+                                    tenetur totam ut. Alias aspernatur at beatae consequatur cupiditate error
+                                    ipsam natus nobis numquam pariatur quaerat quia quisquam, quos, ratione
+                                    vero. Ab assumenda commodi consequatur deleniti doloribus eum excepturi
+                                    expedita facere iusto magnam maxime minus molestiae, nesciunt nostrum
+                                    numquam obcaecati odio officia officiis perferendis possimus quam quod
+                                    repellendus ullam voluptates voluptatum! Accusamus accusantium aliquam
+                                    aliquid architecto at atque autem beatae blanditiis commodi consectetur
+                                    dolores eius eligendi eos, eum incidunt magnam magni maiores odio possimus
+                                    quae quaerat quas quasi quisquam ratione reiciendis similique sit tempore
+                                    velit voluptate voluptates!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -435,15 +518,32 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h6 class="card-title">Additional Content</h6>
+                    <h6 class="card-title">Vertically centered</h6>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Vertically centered modal
+                    </button>
 
-                    <div class="alert alert-success" role="alert">
-                        <h4 class="alert-heading">Well done!</h4>
-                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a
-                            bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                        <hr>
-                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and
-                            tidy.</p>
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="ti-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac
+                                        facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac,
+                                        vestibulum at eros.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -451,38 +551,131 @@
 
             <div class="card">
                 <div class="card-body">
-                    <h6 class="card-title">Dismissing</h6>
+                    <h6 class="card-title">Optional sizes</h6>
 
-                    <div class="alert alert-danger alert-dismissible" role="alert">
-                        A simple danger alert—check it out!
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <i class="ti-close"></i>
+                    <div>
+                        <button type="button" class="btn btn-primary mr-2 mb-2" data-toggle="modal"
+                                data-target=".bd-example-modal-xl">Extra large modal
+                        </button>
+                        <button type="button" class="btn btn-primary mr-2 mb-2" data-toggle="modal"
+                                data-target=".bd-example-modal-lg">Large modal
+                        </button>
+                        <button type="button" class="btn btn-primary mb-2" data-toggle="modal"
+                                data-target=".bd-example-modal-sm">Small modal
                         </button>
                     </div>
 
+                    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title">Extra large modal</h6>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="ti-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title">Large modal</h6>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="ti-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title">Small modal</h6>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="ti-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
             <div class="card">
                 <div class="card-body">
-                    <h6 class="card-title">Alert Icon</h6>
+                    <h6 class="card-title">Varying modal content</h6>
 
-                    <div class="alert alert-success d-flex align-items-center" role="alert">
-                        <i class="ti-check mr-2"></i> A simple success alert—check it out!
+                    <div>
+                        <button type="button" class="btn btn-primary mr-2 mb-2" data-toggle="modal"
+                                data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo
+                        </button>
+                        <button type="button" class="btn btn-primary mr-2 mb-2" data-toggle="modal"
+                                data-target="#exampleModal" data-whatever="@fat">Open modal for @fat
+                        </button>
+                        <button type="button" class="btn btn-primary mb-2" data-toggle="modal"
+                                data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for
+                            @getbootstrap
+                        </button>
                     </div>
 
-                    <div class="alert alert-warning d-flex align-items-center" role="alert">
-                        <i class="ti-help-alt mr-2"></i> A simple warning alert—check it out!
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <h6 class="card-title">Border Style</h6>
-
-                    <div class="alert alert-info alert-with-border" role="alert">
-                        A simple info alert—check it out!
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <i class="ti-close"></i>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                            <input type="text" class="form-control" id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message-text" class="col-form-label">Message:</label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close
+                                    </button>
+                                    <button type="button" class="btn btn-primary">Send message</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -494,22 +687,22 @@
 
             </div>
 
-           <!-- begin::footer -->
-           <footer class="content-footer">
-            <div>© 2023, uTOIP - <a href="#" target="_blank">Telkomsel</a></div>
-            <div>
-                <nav class="nav">
-                    <a href="#" class="nav-link">Docs</a>
-                    <a href="#" class="nav-link">Change Log</a>
-                    <a href="#" class="nav-link">Contact</a>
-                </nav>
-            </div>
-        </footer>
-        <!-- end::footer -->
+             <!-- begin::footer -->
+             <footer class="content-footer">
+                <div>© 2023, uTOIP - <a href="#" target="_blank">Telkomsel</a></div>
+                <div>
+                    <nav class="nav">
+                        <a href="#" class="nav-link">Docs</a>
+                        <a href="#" class="nav-link">Change Log</a>
+                        <a href="#" class="nav-link">Contact</a>
+                    </nav>
+                </div>
+            </footer>
+            <!-- end::footer -->
+
+        </div>
 
     </div>
-
-</div>
 
 </div>
 <!-- end::main -->
@@ -518,20 +711,23 @@
 <script src="vendors/bundle.js"></script>
 
 
-<!-- Datepicker -->
-<script src="vendors/datepicker/daterangepicker.js"></script>
-<script src="assets/js/examples/datepicker.js"></script>
+   <!-- Datepicker -->
+   <script src="vendors/datepicker/daterangepicker.js"></script>
+   <script src="assets/js/examples/datepicker.js"></script>
 
-<!-- DataTable -->
-<script src="vendors/dataTable/datatables.min.js"></script>
+    <!-- DataTable -->
+    <script src="vendors/dataTable/datatables.min.js"></script>
 
-<script>
-    function toggleDarkLight() {
-    var body = document.getElementById("body");
-    var currentClass = body.className;
-    body.className = currentClass == "dark" ? "light" : "dark";
-    }
-</script>
+    <!-- Dashboard scripts -->
+    <script src="assets/js/examples/dashboard.js"></script>
+
+    <script>
+        function toggleDarkLight() {
+        var body = document.getElementById("body");
+        var currentClass = body.className;
+        body.className = currentClass == "dark" ? "light" : "dark";
+        }
+    </script>
 
 <!-- App scripts -->
 <script src="assets/js/app.min.js"></script>

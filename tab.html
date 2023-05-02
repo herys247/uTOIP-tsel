@@ -26,6 +26,7 @@
         <link rel="stylesheet" href="assets/css/app.min.css" type="text/css">
     </head>
     <body id="body" class="dark"> 
+    
 
 <!-- begin::preloader-->
 <div class="preloader">
@@ -270,7 +271,7 @@
                                 <a href="#">Basic Components</a>
                                 <ul>
                                     <li>
-                                        <a class="active" href="alert.html">Alerts</a></li>
+                                        <a  href="alert.html">Alerts</a></li>
                                     <li>
                                         <a  href="accordion.html">Accordion</a></li>
                                     <li>
@@ -282,7 +283,9 @@
                                     <li>
                                         <a  href="modal.html">Modal</a></li>
                                     <li>
-                                        <a  href="tab.html">Tab</a></li>
+                                        <a  class="active" href="tab.html">Tab</a></li>
+                                    <li>
+                                        <a  href="#">Tooltip</a></li>
                                 </ul>
                             </li>
                             <li>
@@ -337,6 +340,7 @@
                                 <a  href="#">Toast</a></li>
                             <li>
                                 <a  href="#">Tour</a></li>
+                        </ul>
                     </div>
                     <div id="pages">
                         <ul>
@@ -389,7 +393,7 @@
                 <li class="breadcrumb-item">
                     <a href="#">Components</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">Alerts</li>
+                <li class="breadcrumb-item active" aria-current="page">Tab</li>
             </ol>
         </nav>
     </div>
@@ -397,92 +401,125 @@
     <div class="row">
         <div class="col-md-12">
 
-            <div class="card">
-                <div class="card-body">
-                    <h6 class="card-title">Default Functionality</h6>
+            <div class="row">
+                <div class="col-md-12">
 
-                    <div class="alert alert-secondary" role="alert">
-                        A simple secondary alert—check it out!
-                    </div>
-                    <div class="alert alert-success" role="alert">
-                        A simple success alert—check it out!
-                    </div>
-                    <div class="alert alert-danger" role="alert">
-                        A simple danger alert—check it out!
-                    </div>
-                    <div class="alert alert-warning" role="alert">
-                        A simple warning alert—check it out!
-                    </div>
-                    <div class="alert alert-info" role="alert">
-                        A simple info alert—check it out!
-                    </div>
-                    <div class="alert alert-dark m-b-0" role="alert">
-                        A simple dark alert—check it out!
-                    </div>
-                </div>
-            </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Basic tab</h6>
+                            <ul class="nav nav-tabs mb-3" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                       aria-controls="home" aria-selected="true">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                       aria-controls="profile" aria-selected="false">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                       aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                     aria-labelledby="home-tab">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, soluta!
+                                </div>
+                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    Lorem
+                                    ipsum dolor sit amet, consectetur adipisicing elit. Accusantium commodi error ipsa
+                                    ipsam
+                                    sapiente tempore.
+                                </div>
+                                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                    Lorem
+                                    ipsum dolor sit amet.
+                                </div>
+                            </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <h6 class="card-title">Alert Link</h6>
-                    <div class="alert alert-success" role="alert">
-                        A simple success alert with <a href="#" class="alert-link">an example link</a>. Give it a
-                        click if you like.
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <h6 class="card-title">Additional Content</h6>
-
-                    <div class="alert alert-success" role="alert">
-                        <h4 class="alert-heading">Well done!</h4>
-                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a
-                            bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                        <hr>
-                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and
-                            tidy.</p>
+                        </div>
                     </div>
 
-                </div>
-            </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Pill tab</h6>
+                            <ul class="nav nav-pills mb-3" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
+                                       role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
+                                       role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
+                                       role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                     aria-labelledby="pills-home-tab"> Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Harum, soluta.
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                     aria-labelledby="pills-profile-tab"> Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Harum, soluta.
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                     aria-labelledby="pills-contact-tab"> Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Harum, soluta.
+                                </div>
+                            </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <h6 class="card-title">Dismissing</h6>
-
-                    <div class="alert alert-danger alert-dismissible" role="alert">
-                        A simple danger alert—check it out!
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <i class="ti-close"></i>
-                        </button>
+                        </div>
                     </div>
 
-                </div>
-            </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title">Vertical Pill tab</h6>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="nav flex-column nav-pills" role="tablist"
+                                         aria-orientation="vertical">
+                                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill"
+                                           href="#v-pills-home" role="tab" aria-controls="v-pills-home"
+                                           aria-selected="true">Home</a>
+                                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill"
+                                           href="#v-pills-profile" role="tab" aria-controls="v-pills-profile"
+                                           aria-selected="false">Profile</a>
+                                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill"
+                                           href="#v-pills-messages" role="tab" aria-controls="v-pills-messages"
+                                           aria-selected="false">Messages</a>
+                                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill"
+                                           href="#v-pills-settings" role="tab" aria-controls="v-pills-settings"
+                                           aria-selected="false">Settings</a>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                             aria-labelledby="v-pills-home-tab"> Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing elit. Deserunt, totam?
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                             aria-labelledby="v-pills-profile-tab"> Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit. Qui, quo!
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                                             aria-labelledby="v-pills-messages-tab"> Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit. Atque, fugit.
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                                             aria-labelledby="v-pills-settings-tab"> Lorem ipsum dolor sit amet,
+                                            consectetur adipisicing elit. Deleniti, incidunt?
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-            <div class="card">
-                <div class="card-body">
-                    <h6 class="card-title">Alert Icon</h6>
-
-                    <div class="alert alert-success d-flex align-items-center" role="alert">
-                        <i class="ti-check mr-2"></i> A simple success alert—check it out!
-                    </div>
-
-                    <div class="alert alert-warning d-flex align-items-center" role="alert">
-                        <i class="ti-help-alt mr-2"></i> A simple warning alert—check it out!
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <h6 class="card-title">Border Style</h6>
-
-                    <div class="alert alert-info alert-with-border" role="alert">
-                        A simple info alert—check it out!
+                        </div>
                     </div>
 
                 </div>
@@ -494,22 +531,22 @@
 
             </div>
 
-           <!-- begin::footer -->
-           <footer class="content-footer">
-            <div>© 2023, uTOIP - <a href="#" target="_blank">Telkomsel</a></div>
-            <div>
-                <nav class="nav">
-                    <a href="#" class="nav-link">Docs</a>
-                    <a href="#" class="nav-link">Change Log</a>
-                    <a href="#" class="nav-link">Contact</a>
-                </nav>
-            </div>
-        </footer>
-        <!-- end::footer -->
+            <!-- begin::footer -->
+            <footer class="content-footer">
+                <div>© 2023, uTOIP - <a href="#" target="_blank">Telkomsel</a></div>
+                <div>
+                    <nav class="nav">
+                        <a href="#" class="nav-link">Docs</a>
+                        <a href="#" class="nav-link">Change Log</a>
+                        <a href="#" class="nav-link">Contact</a>
+                    </nav>
+                </div>
+            </footer>
+            <!-- end::footer -->
+
+        </div>
 
     </div>
-
-</div>
 
 </div>
 <!-- end::main -->
@@ -518,20 +555,23 @@
 <script src="vendors/bundle.js"></script>
 
 
-<!-- Datepicker -->
-<script src="vendors/datepicker/daterangepicker.js"></script>
-<script src="assets/js/examples/datepicker.js"></script>
+   <!-- Datepicker -->
+   <script src="vendors/datepicker/daterangepicker.js"></script>
+   <script src="assets/js/examples/datepicker.js"></script>
 
-<!-- DataTable -->
-<script src="vendors/dataTable/datatables.min.js"></script>
+    <!-- DataTable -->
+    <script src="vendors/dataTable/datatables.min.js"></script>
 
-<script>
-    function toggleDarkLight() {
-    var body = document.getElementById("body");
-    var currentClass = body.className;
-    body.className = currentClass == "dark" ? "light" : "dark";
-    }
-</script>
+    <!-- Dashboard scripts -->
+    <script src="assets/js/examples/dashboard.js"></script>
+
+    <script>
+        function toggleDarkLight() {
+        var body = document.getElementById("body");
+        var currentClass = body.className;
+        body.className = currentClass == "dark" ? "light" : "dark";
+        }
+    </script>
 
 <!-- App scripts -->
 <script src="assets/js/app.min.js"></script>
