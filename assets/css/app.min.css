@@ -7594,7 +7594,7 @@ body.form-membership .form-wrapper #logo {
   margin: 1rem 0 3rem;
 }
 
-body.form-membership .form-wrapper #logo #logoTsel img:not(.logo) img:not(.logo-tsel) {
+body.form-membership .form-wrapper #logo #logoTsel img:not(.logo) {
   display: none;
 }
 
@@ -10053,8 +10053,8 @@ small {
 }
 
 .header .header-logo a img:not(.logo),
-.header .header-logo form .input-group .input-group-append button.btn img:not(.logo .logo-tsel),
-.header form .input-group .input-group-append .header-logo button.btn img:not(.logo .logo-tsel) {
+.header .header-logo form .input-group .input-group-append button.btn img:not(.logo),
+.header form .input-group .input-group-append .header-logo button.btn img:not(.logo) {
   display: none;
 }
 
@@ -11700,13 +11700,7 @@ body.dark.form-membership .form-wrapper #logo img:not(.logo-light) {
 .logo-tsel {
   width: 135px;
 }
-body.light .nav-item #logoTsel img:not(.logo-tsel) {
-  display: none !important;
-}
 
-body.dark .logo-tsel-light {
-  display: none !important;
-}
 
 body.dark .content-footer {
   background-color: #313852;

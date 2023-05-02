@@ -1,31 +1,31 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>uTOIP Dashboard - Telkomsel</title>
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/media/image/favicon.png"/>
-
-    <!-- Plugin styles -->
-    <link rel="stylesheet" href="vendors/bundle.css" type="text/css">
-
-        <!-- Slick -->
-    <link rel="stylesheet" href="vendors/slick/slick.css" type="text/css">
-    <link rel="stylesheet" href="vendors/slick/slick-theme.css" type="text/css">
-
-    <!-- Daterangepicker -->
-    <link rel="stylesheet" href="vendors/datepicker/daterangepicker.css" type="text/css">
-
-    <!-- DataTable -->
-    <link rel="stylesheet" href="vendors/dataTable/datatables.min.css" type="text/css">
-
-    <!-- App styles -->
-    <link rel="stylesheet" href="assets/css/app.min.css" type="text/css">
-</head>
-<body id="body" class="dark"> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>uTOIP Dashboard - Telkomsel</title>
+    
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/media/image/favicon.png"/>
+    
+        <!-- Plugin styles -->
+        <link rel="stylesheet" href="vendors/bundle.css" type="text/css">
+    
+            <!-- Slick -->
+        <link rel="stylesheet" href="vendors/slick/slick.css" type="text/css">
+        <link rel="stylesheet" href="vendors/slick/slick-theme.css" type="text/css">
+    
+        <!-- Daterangepicker -->
+        <link rel="stylesheet" href="vendors/datepicker/daterangepicker.css" type="text/css">
+    
+        <!-- DataTable -->
+        <link rel="stylesheet" href="vendors/dataTable/datatables.min.css" type="text/css">
+    
+        <!-- App styles -->
+        <link rel="stylesheet" href="assets/css/app.min.css" type="text/css">
+    </head>
+    <body id="body" class="dark"> 
 
 <!-- begin::preloader-->
 <div class="preloader">
@@ -184,6 +184,7 @@
     </div>
     <!-- end::header -->
 
+
     <div class="content-wrapper">
 
         <!-- begin::navigation -->
@@ -240,7 +241,7 @@
                             <li>
                                 <a href="#">Gross Rev. Performance</a>
                                 <ul>
-                                    <li><a class="active" href="#">General Performance</a></li>
+                                    <li><a href="#">General Performance</a></li>
                                     <li><a href="#">Dashboard 01</a></li>
                                     <li><a href="#">Dashboard 02</a></li>
                                 </ul>
@@ -272,7 +273,7 @@
                                     <li>
                                         <a  href="alert.html">Alerts</a></li>
                                     <li>
-                                        <a  href="accordion.html">Accordion</a></li>
+                                        <a class="active" href="accordion.html">Accordion</a></li>
                                     <li>
                                         <a  href="#">Buttons</a></li>
                                     <li>
@@ -398,12 +399,12 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
-                    <a href="#">Consolidated Dashboard</a>
+                    <a href="#">Home</a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a href="#">Gross Revenue Performance</a>
+                    <a href="#">Components</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">General Performance</li>
+                <li class="breadcrumb-item active" aria-current="page">Accordion</li>
             </ol>
         </nav>
     </div>
@@ -411,269 +412,168 @@
     <div class="row">
         <div class="col-md-12">
 
+            <div class="card">
+                <div class="card-body">
+                    <h6 class="card-title">Basic Accordion</h6>
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="card shadow-none">
+                            <div class="card-header" id="headingOne">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                    Collapsible Group Item #1
+                                </button>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it
+                                    squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                    helvetica,
+                                    craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                    excepteur
+                                    butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                                    synth
+                                    nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-none">
+                            <div class="card-header" id="headingTwo">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Collapsible Group Item #2
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it
+                                    squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                    helvetica,
+                                    craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                    excepteur
+                                    butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                                    synth
+                                    nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card shadow-none">
+                            <div class="card-header" id="headingThree">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                    Collapsible Group Item #3
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                    quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird
+                                    on it
+                                    squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                    helvetica,
+                                    craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                                    excepteur
+                                    butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                                    synth
+                                    nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-md-12">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-
-            <div class="row">
-                <div class="col-lg-12 col-md-12">
                     <div class="card">
                         <div class="card-body">
-                            
-                            <form>
-                                <div class="form-row">
-                                  <div class="form-group col-md-3">
-                                    <label for="inputDate">Date</label>
-                                    <input type="text" name="single-date-picker" class="form-control">
-                                  </div>
-                                  <div class="form-group col-md-3">
-                                    <label for="selectArea">Area</label>
-                                        <select class="form-control" id="selectArea">
-                                          <option>Nasional</option>
-                                          <option>Area 1</option>
-                                          <option>Area 2</option>
-                                          <option>Area 3</option>
-                                          <option>Area 4</option>
-                                        </select>
-                                  </div>
-                                  <div class="form-group col-md-3">
-                                    <label for="selectArea">Region</label>
-                                        <select class="form-control" id="selectArea">
-                                          <option>All Region</option>
-                                          <option>Region 1</option>
-                                          <option>Region 2</option>
-                                          <option>Region 3</option>
-                                          <option>Region 4</option>
-                                        </select>
-                                  </div>
-                                  <div class="col-md-3 p-t-30">
-                                    <button type="submit" class="btn btn-primary m-l-r-5 ">Submit</button>
-                                    <button type="button" class="btn btn-success m-l-r-5">
-                                        <i class="fa fa-file-excel-o"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-warning m-l-r-5">
-                                        <i class="fa fa-file-image-o"></i>
-                                    </button>
-                                  </div>
+                            <h6 class="card-title">Custom Accordion Default</h6>
+                            <div class="accordion accordion-primary custom-accordion">
+                                <div class="accordion-row open">
+                                    <a href="#" class="accordion-header">
+                                        <span>Accordion 1</span>
+                                        <i class="accordion-status-icon close fa fa-chevron-up"></i>
+                                        <i class="accordion-status-icon open fa fa-chevron-down"></i>
+                                    </a>
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem
+                                            cumque distinctio dolor dolore dolorem dolores error fugit hic ipsam magnam
+                                            magni maxime minima nobis officia omnis perspiciatis, quasi quis ratione
+                                            sunt? Deserunt distinctio eligendi et ipsum obcaecati repudiandae. Aperiam
+                                            at consequuntur dignissimos, dolorem eaque earum exercitationem fugit
+                                            perspiciatis ratione veritatis? Ad culpa facere numquam? A architecto, aut
+                                            cum deleniti dignissimos distinctio dolor dolores ducimus ea, error esse ex
+                                            illum impedit ipsum maiores minima mollitia nihil odit officiis omnis
+                                            repudiandae rerum saepe sapiente sed sint ullam vel velit veritatis vitae
+                                            voluptatibus. Blanditiis harum laborum, magni nisi nulla provident quae
+                                            rem!</p>
+                                    </div>
                                 </div>
-                            </form>
-                            <small class="form-text text-muted m-t-10">Update Date: 27-Mar-2023</small>
+                                <div class="accordion-row">
+                                    <a href="#" class="accordion-header">
+                                        <span>Accordion 2</span>
+                                        <i class="accordion-status-icon close fa fa-chevron-up"></i>
+                                        <i class="accordion-status-icon open fa fa-chevron-down"></i>
+                                    </a>
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem
+                                            cumque distinctio dolor dolore dolorem dolores error fugit hic ipsam magnam
+                                            magni maxime minima nobis officia omnis perspiciatis, quasi quis ratione
+                                            sunt? Deserunt distinctio eligendi et ipsum obcaecati repudiandae. Aperiam
+                                            at consequuntur dignissimos, dolorem eaque earum exercitationem fugit
+                                            perspiciatis ratione veritatis? Ad culpa facere numquam? A architecto, aut
+                                            cum deleniti dignissimos distinctio dolor dolores ducimus ea, error esse ex
+                                            illum impedit ipsum maiores minima mollitia nihil odit officiis omnis
+                                            repudiandae rerum saepe sapiente sed sint ullam vel velit veritatis vitae
+                                            voluptatibus. Blanditiis harum laborum, magni nisi nulla provident quae
+                                            rem!</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-row">
+                                    <a href="#" class="accordion-header">
+                                        <span>Accordion 3</span>
+                                        <i class="accordion-status-icon close fa fa-chevron-up"></i>
+                                        <i class="accordion-status-icon open fa fa-chevron-down"></i>
+                                    </a>
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid autem
+                                            cumque distinctio dolor dolore dolorem dolores error fugit hic ipsam magnam
+                                            magni maxime minima nobis officia omnis perspiciatis, quasi quis ratione
+                                            sunt? Deserunt distinctio eligendi et ipsum obcaecati repudiandae. Aperiam
+                                            at consequuntur dignissimos, dolorem eaque earum exercitationem fugit
+                                            perspiciatis ratione veritatis? Ad culpa facere numquam? A architecto, aut
+                                            cum deleniti dignissimos distinctio dolor dolores ducimus ea, error esse ex
+                                            illum impedit ipsum maiores minima mollitia nihil odit officiis omnis
+                                            repudiandae rerum saepe sapiente sed sint ullam vel velit veritatis vitae
+                                            voluptatibus. Blanditiis harum laborum, magni nisi nulla provident quae
+                                            rem!</p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-12">
-
-            <div class="row">
-                <div class="col-lg-3 col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <div>
-                                    <p class="text-muted">Rev. All MTD</p>
-                                    <h2 class="font-weight-bold text-center">5.999 Bn</h2>
-                                </div>
- 
-                            </div>
-                            <div class="d-flex">
-                                <div class="flex-fill text-center font-size-12">MoM<br>
-                                    <span class="text-danger d-inline-flex">
-                                    <span class="ti-arrow-down mr-2"></span> -4.2%</span>
-                                </div>
-                                <div class="flex-fill text-center font-size-12">MoM<br>
-                                    <span class="text-danger d-inline-flex">
-                                    <span class="ti-arrow-down mr-2"></span> -5.2%</span>
-                                </div>
-                                <div class="flex-fill text-center font-size-12">MoM<br>
-                                    <span class="text-danger d-inline-flex">
-                                    <span class="ti-arrow-down mr-2"></span> -1.5%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <div>
-                                    <p class="text-muted">Rev. Data MTD</p>
-                                    <h2 class="font-weight-bold text-center">3.477 Bn</h2>
-                                </div>
- 
-                            </div>
-                            <div class="d-flex">
-                                <div class="flex-fill text-center font-size-12">MoM<br>
-                                    <span class="text-danger d-inline-flex">
-                                    <span class="ti-arrow-down mr-2"></span> -3.7%</span>
-                                </div>
-                                <div class="flex-fill text-center font-size-12">MoM<br>
-                                    <span class="text-success d-inline-flex">
-                                    <span class="ti-arrow-up mr-2"></span> 1.8%</span>
-                                </div>
-                                <div class="flex-fill text-center font-size-12">MoM<br>
-                                    <span class="text-success d-inline-flex">
-                                    <span class="ti-arrow-up mr-2"></span> 5.1%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <div>
-                                    <p class="text-muted">Rev. Voice MTD</p>
-                                    <h2 class="font-weight-bold text-center">777 Bn</h2>
-                                </div>
- 
-                            </div>
-                            <div class="d-flex">
-                                <div class="flex-fill text-center font-size-12">MoM<br>
-                                    <span class="text-danger d-inline-flex">
-                                    <span class="ti-arrow-down mr-2"></span> -5.1%</span>
-                                </div>
-                                <div class="flex-fill text-center font-size-12">MoM<br>
-                                    <span class="text-danger d-inline-flex">
-                                    <span class="ti-arrow-down mr-2"></span> -22.9%</span>
-                                </div>
-                                <div class="flex-fill text-center font-size-12">MoM<br>
-                                    <span class="text-danger d-inline-flex">
-                                    <span class="ti-arrow-down mr-2"></span> -21.5%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <div>
-                                    <p class="text-muted">Rev. Digital MTD</p>
-                                    <h2 class="font-weight-bold text-center">678 Bn</h2>
-                                </div>
- 
-                            </div>
-                            <div class="d-flex">
-                                <div class="flex-fill text-center font-size-12">MoM<br>
-                                    <span class="text-danger d-inline-flex">
-                                    <span class="ti-arrow-down mr-2"></span> -4.2%</span>
-                                </div>
-                                <div class="flex-fill text-center font-size-12">MoM<br>
-                                    <span class="text-danger d-inline-flex">
-                                    <span class="ti-arrow-down mr-2"></span> -5.2%</span>
-                                </div>
-                                <div class="flex-fill text-center font-size-12">MoM<br>
-                                    <span class="text-danger d-inline-flex">
-                                    <span class="ti-arrow-down mr-2"></span> -1.5%</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
             </div>
 
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-lg-4 col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <h6 class="card-title">Achievement to Target</h6>
-                        <div>
-                            <a href="#" class="btn btn-outline-light btn-sm mr-2">
-                                <i class="fa fa-refresh"></i>
-                            </a>
-                            <div class="dropdown">
-                                <a href="#" data-toggle="dropdown"
-                                   class="btn btn-outline-light btn-sm"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div><img src="assets/media/image/barchart.png" style="width: 100%;"></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <h6 class="card-title">Service Contribution</h6>
-                        <div>
-                            <a href="#" class="btn btn-outline-light btn-sm mr-2">
-                                <i class="fa fa-refresh"></i>
-                            </a>
-                            <div class="dropdown">
-                                <a href="#" data-toggle="dropdown"
-                                   class="btn btn-outline-light btn-sm"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div><img src="assets/media/image/piechart.png" style="width: 100%;"></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                        <h6 class="card-title">LoS Performance</h6>
-                        <div>
-                            <a href="#" class="btn btn-outline-light btn-sm mr-2">
-                                <i class="fa fa-refresh"></i>
-                            </a>
-                            <div class="dropdown">
-                                <a href="#" data-toggle="dropdown"
-                                   class="btn btn-outline-light btn-sm"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div><img src="assets/media/image/barchart.png" style="width: 100%;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 
 
             </div>
