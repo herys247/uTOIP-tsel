@@ -328,9 +328,9 @@
                                     <i class="mr-2" data-feather="gift"></i> Plugins
                                 </li>
                                 <li>
-                                    <a  href="sweet-alert.html">Sweet Alert</a></li>
+                                    <a  href="#">Sweet Alert</a></li>
                                 <li>
-                                    <a  href="tour.html">Tour</a></li>
+                                    <a  href="#">Tour</a></li>
                             </ul>
                         </div>
                         <div id="pages">
@@ -380,9 +380,9 @@
                     <a href="#">Home</a>
                 </li>
                 <li class="breadcrumb-item">
-                    <a href="#">Pages</a>
+                    <a href="#">Plugins</a>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">Blank Page</li>
+                <li class="breadcrumb-item active" aria-current="page">Sweet Alert</li>
             </ol>
         </nav>
     </div>
@@ -390,10 +390,79 @@
     <div class="row">
         <div class="col-md-12">
 
-            <div class="card">
-                <div class="card-body">
-                    <h6 class="card-title">Content Title</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab consequuntur debitis dignissimos doloremque fuga ipsa itaque magnam mollitia, necessitatibus neque officiis quam quas quia reiciendis reprehenderit sed suscipit ut voluptas.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="pt-4 pb-4 text-center">
+                                <button type="button" class="btn btn-primary sweet-basic">Basic</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="pt-4 pb-4 text-center">
+                                <button type="button" class="btn btn-success sweet-success">Success</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="pt-4 pb-4 text-center">
+                                <button type="button" class="btn btn-warning sweet-warning">Warning</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="pt-4 pb-4 text-center">
+                                <button type="button" class="btn btn-danger sweet-error">Error</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="pt-4 pb-4 text-center">
+                                <button type="button" class="btn btn-info sweet-info">Info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="pt-4 pb-4 text-center">
+                                <button type="button" class="btn btn-primary sweet-multiple">Success or Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="pt-4 pb-4 text-center">
+                                <button type="button" class="btn btn-primary sweet-prompt">Prompt</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="pt-4 pb-4 text-center">
+                                <button type="button" class="btn btn-primary sweet-ajax">Ajax</button>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -402,6 +471,7 @@
 
 
             </div>
+
 
             <!-- begin::footer -->
             <footer class="content-footer">
@@ -426,6 +496,12 @@
 <!-- Plugin scripts -->
 <script src="vendors/bundle.js"></script>
 
+    <!-- Sweet alert -->
+    <script src="assets/js/examples/sweet-alert.js"></script>
+
+    <!-- Prism -->
+    <script src="vendors/prism/prism.js"></script>
+
     <script>
         function toggleDarkLight() {
         var body = document.getElementById("body");
@@ -439,4 +515,3 @@
 
 </body>
 </html>
-
