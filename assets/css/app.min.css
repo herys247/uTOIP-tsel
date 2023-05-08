@@ -10245,6 +10245,7 @@ small {
     padding: 5px 0;
     margin-right: 0;
     border-radius: 100px;
+    overflow-x: hidden;
 }
 
 .navigation .navigation-menu-tab .avatar {
