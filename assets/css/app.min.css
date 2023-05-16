@@ -10827,20 +10827,26 @@ body.dark .table {
 }
 
 body.dark .table .thead-light th {
-  background-color: #59607a;
+  background-color: #B70F17;
   color: inherit;
+}
+
+.table .thead-dark th {
+  color: #fff;
+  background-color: #B70F17;
+  border-color: #dee2e6;
 }
 
 body.dark .table .thead-dark th,
 body.dark .table-dark,
 body.dark .table-dark th,
 body.dark .table-dark td {
-  background-color: #04071a;
+  background-color: #B70F17;
 }
 
 body.dark .mark,
 body.dark mark {
-  background-color: #59607a;
+  background-color: #ED1846;
   color: inherit;
 }
 
