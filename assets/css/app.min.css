@@ -4707,7 +4707,6 @@ a:not(.btn):active,
 a:not(.btn):focus,
 .header form .input-group .input-group-append button.btn:not(.btn):focus {
   text-decoration: none !important;
-  color: black;
   outline: none;
 }
 
