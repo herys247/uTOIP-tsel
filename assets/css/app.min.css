@@ -7604,8 +7604,6 @@ body.form-membership .form-wrapper #logo #logoTsel img:not(.logo) {
 .login-background {
   background-image: url('../media/image/login-bg.jpg');
   background-size: cover;
-  background-position: top right;
-  background-repeat: no-repeat;
 }
 
 body.form-membership .form-wrapper h5 {
