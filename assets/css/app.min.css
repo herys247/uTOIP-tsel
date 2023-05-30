@@ -11737,6 +11737,18 @@ body.dark.small-navigation .navigation-menu-body ul li.navigation-divider:after 
   background-color: #454c66 !important;
 }
 
+.home-app-container {
+  display: inline-flex !important;
+  width: 100%;
+}
+
+.home-app-text {
+  display: grid;
+  align-content: center;
+  align-items: end;
+  width: 100%;
+}
+
 @media (min-width: 1200px) {
   body.dark.horizontal-navigation .horizontal-navigation {
     background-color: #313852;
