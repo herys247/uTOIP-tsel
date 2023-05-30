@@ -11749,6 +11749,10 @@ body.dark.small-navigation .navigation-menu-body ul li.navigation-divider:after 
   width: 100%;
 }
 
+.home-app-img {
+  min-width: fit-content;
+}
+
 @media (min-width: 1200px) {
   body.dark.horizontal-navigation .horizontal-navigation {
     background-color: #313852;
