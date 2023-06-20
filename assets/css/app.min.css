@@ -3624,6 +3624,22 @@ body.error-page .display-1 {
   border: none;
 }
 
+.insearch {
+  border: 1px solid #dee2e6;
+  width: 100%;
+  padding: 9px 4px 9px 40px;
+  border-radius: 0.5rem;
+  background: url('../media/image/search.svg') no-repeat left center;
+  background-position: 0.7% 50%; 
+}
+
+body.dark .insearch {
+  border-color: #454c66;
+  color: #c3c3c3;
+  background: url('../media/image/search-dark.svg') no-repeat left center;
+  background-position: 0.7% 50%; 
+}
+
 textarea {
   min-height: 100px;
   max-height: 500px;
